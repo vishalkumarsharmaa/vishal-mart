@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Cart</h1>
+    <div id="cart-items" class="cart-items"></div>
+
+    <script src="vishal.js"></script>
+    <script>
+        // Function to initialize the cart page
+        function initializeCartPage() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartContainer = document.getElementById('cart-items');
+            if (cartContainer) {
+                cartContainer.innerHTML = ''; // Clear previous cart items
+                cart.forEach(item => {
+                    const cartItemDiv = document.createElement('div');
+                    cartItemDiv.classList.add('cart-item');
+                    cartItemDiv.innerHTML = `
+                        <p>${item.name}</p>
+                        <p>$${item.price}</p>
+                    `;
+                    cartContainer.appendChild(cartItemDiv);
+                });
+            }
+        }
+        // Call initialize function for cart page
+        initializeCartPage();
+    </script>
+</body>
+</html>!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Mart - Cart</title>
+    <link rel="stylesheet" href="vishal.css">
+</head>
+<body>
+    <header>
+        <h1>Vishal Mart</h1>
+    </header>
+    <div class="cart-items">
+        <!-- Cart items will be displayed dynamically here -->
+    </div>
+    <button id="payment-btn">Make Payment</button>
+    <script src="vishal.js"></script>
+</body>
+</html>

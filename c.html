@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Mart</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <header>
+        <h1><b>Welcome to Vishal Mart</b></h1>
+    </header>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form">
+                <label ><b> Username</b></label><br><input type="email" placeholder="Email" required  ><br>
+                <label><b>Password</b></label><br><input type="password" placeholder="Password" required><br>
+                <button class="lg">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-page hidden">
+        <div class="banner">
+            <img src="images/back.jpeg" alt="Product Banner">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>
+        <!-- Add the following div for products -->
+        <div class="products">
+            <!-- Products display dynamically using JavaScript -->
+        </div>
+        <!-- End of products div -->
+        <button class="view-cart">View Cart</button>
+    </div>
+
+    <div class="cart-page hidden">
+        <h2>Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items display dynamically using JavaScript -->
+        </div>
+        <button class="payment-button">Proceed to Payment</button>
+        <p class="payment-message hidden">Payment is done!</p>
+    </div>
+
+    <script src="c.js"></script>
+</body>
+</html>

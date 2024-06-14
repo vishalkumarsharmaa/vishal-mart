@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.form {
+    margin-top: 100px;
+}
+
+.banner img {
+    width: 80%;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cart-page {
+    margin-top: 20px;
+}
+
+.cart-items {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-message {
+    color: green;
+}
+header h1{
+    font-size: 40px;
+
+}
+header{
+    background-color: black;
+    color: azure;
+    text-align: center;
+}.login-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

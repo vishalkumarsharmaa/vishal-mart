@@ -1,0 +1,32 @@
+.box{
+    width:100vw;
+    background-image: url("/images/back.jpeg");
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inside{
+ width: 400px;
+ height: 400px;
+ background-color:cornflowerblue;
+text-align: center;
+}
+.out{
+    text-align: center;
+}
+.input{
+    margin: 20px;
+    padding-left: 10px;
+}
+.button{
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.in{
+    margin-bottom: 40px;
+}
+
+
+
